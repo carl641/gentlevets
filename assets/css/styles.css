@@ -97,17 +97,16 @@ p { margin: 0 0 1em; }
 .section--blue h2, .section--blue h3 { color: #fff; }
 
 .eyebrow {
-  display: inline-flex; align-items: center; gap: .5em;
+  display: inline-flex; align-items: center; gap: .6em;
   font-size: .8rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
   color: var(--teal-700); margin-bottom: 1rem;
 }
-.eyebrow::before { content: ""; width: 22px; height: 2px; background: currentColor; border-radius: 2px; }
+.eyebrow::before { content: ""; width: 22px; height: 22px; flex: none; background: url("../img/mark.png") center / contain no-repeat; }
 .section--blue .eyebrow { color: var(--teal); }
 
 .lede { font-size: clamp(1.1rem, 1.6vw, 1.25rem); color: var(--ink-soft); max-width: 60ch; }
 .section-head { max-width: 720px; margin-bottom: clamp(36px, 5vw, 56px); }
 .section-head--center { margin-inline: auto; text-align: center; }
-.section-head--center .eyebrow::before { display: none; }
 
 /* ---------- Buttons ---------- */
 .btn {
